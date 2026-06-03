@@ -1,0 +1,6 @@
+<svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="44" fill="#000000" />
+  <text x="8" y="28" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="24" font-weight="700">INOX</text>
+  <text x="72" y="28" fill="#E60000" font-family="Inter, sans-serif" font-size="24" font-weight="700">FERRO</text>
+  <rect x="0" y="0" width="160" height="44" rx="0" stroke="#E60000" stroke-width="2" />
+</svg>

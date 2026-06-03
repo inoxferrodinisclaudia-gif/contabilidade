@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Inox Ferro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-background text-text">
+  <div class="min-h-screen">
+    <div class="flex">
+      <aside class="hidden w-[280px] shrink-0 border-r border-border bg-surface px-4 py-8 xl:block print:hidden sticky top-0 self-start h-screen overflow-y-auto">
+        <div class="mb-10 flex justify-center">
+          <div class="logo">INOX FERRO</div>
+        </div>
+        <nav class="mt-6 space-y-1">
+          <a href="index.html" class="nav-item nav-item-active">Dashboard</a>
+          <a href="orcamentos.html" class="nav-item">Orçamentos</a>
+          <a href="tabela-precos.html" class="nav-item">Tabela de Preços</a>
+          <a href="clientes.html" class="nav-item">Clientes</a>
+          <a href="admin.html" class="nav-item">Admin</a>
+          <a href="seguranca.html" class="nav-item">Segurança</a>
+          <a href="calendario.html" class="nav-item">Calendário</a>
+          <a href="gestao-orcamentos.html" class="nav-item">Gestão Orçamentos</a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-6 pt-24">
+        <header class="sticky top-0 z-50 rounded-none border-b border-border bg-surface/95 px-4 py-3 backdrop-blur print:hidden">
+          <div class="flex items-center justify-between gap-4 container">
+            <div class="flex items-center gap-4">
+              <div class="logo">INOX FERRO</div>
+              <div class="brand-sub hidden md:block">Sistema de Orçamentos</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="btn-soft">Tema</button>
+            </div>
+          </div>
+        </header>
+
+        <section class="mt-6 mb-8">
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="rounded-lg border border-border bg-surface/50 backdrop-blur-sm p-6 hover:border-red-400 transition-colors">
+              <p class="text-sm text-gray-400 uppercase tracking-wider">Faturamento (Mês)</p>
+              <p class="mt-3 text-3xl font-bold text-white">€0</p>
+              <p class="mt-2 text-xs text-gray-500">Sem dados</p>
+            </div>
+            <div class="rounded-lg border border-border bg-surface/50 backdrop-blur-sm p-6 hover:border-red-400 transition-colors">
+              <p class="text-sm text-gray-400 uppercase tracking-wider">Orçamentos (Mês)</p>
+              <p class="mt-3 text-3xl font-bold text-white">0</p>
+              <p class="mt-2 text-xs text-gray-500">Sem dados</p>
+            </div>
+            <div class="rounded-lg border border-border bg-surface/50 backdrop-blur-sm p-6 hover:border-red-400 transition-colors">
+              <p class="text-sm text-gray-400 uppercase tracking-wider">Crescimento Anual</p>
+              <p class="mt-3 text-3xl font-bold text-white">-</p>
+              <p class="mt-2 text-xs text-gray-500">Sem dados</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid gap-6 lg:grid-cols-2 mb-8">
+          <div class="rounded-lg border border-border bg-surface/30 backdrop-blur-sm p-6">
+            <h3 class="text-lg font-semibold text-white">Evolução Mensal</h3>
+            <p class="text-sm text-gray-400 mt-1">Faturamento e Orçamentos por mês.</p>
+            <div class="h-[300px] flex items-center justify-center text-gray-400">Gráfico estático</div>
+          </div>
+          <div class="rounded-lg border border-border bg-surface/30 backdrop-blur-sm p-6">
+            <h3 class="text-lg font-semibold text-white">Desempenho Anual</h3>
+            <p class="text-sm text-gray-400 mt-1">Crescimento histórico de faturamento.</p>
+            <div class="h-[300px] flex items-center justify-center text-gray-400">Gráfico estático</div>
+          </div>
+        </section>
+
+        <section class="mt-6">
+          <div class="grid gap-6 xl:grid-cols-[320px_1fr]">
+            <div class="rounded-none border border-border bg-surface p-6">
+              <h2 class="text-xl font-semibold text-white">Painel Inox Ferro</h2>
+              <p class="mt-4 text-sm leading-6 text-gray-300">Plataforma de orçamentos profissionais com gestão de clientes, estatísticas e exportação.</p>
+            </div>
+            <div class="rounded-none border border-border bg-surface p-6">
+              <div class="grid gap-4 md:grid-cols-2">
+                <div class="rounded-none border border-border bg-black p-4">
+                  <span class="text-xs uppercase tracking-[0.2em] text-red-500">Orçamentos</span>
+                  <p class="mt-3 text-4xl font-bold">0</p>
+                </div>
+                <div class="rounded-none border border-border bg-black p-4">
+                  <span class="text-xs uppercase tracking-[0.2em] text-red-500">Faturado</span>
+                  <p class="mt-3 text-4xl font-bold">0€</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
