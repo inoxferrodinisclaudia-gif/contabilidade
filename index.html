@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inox Ferro - Página Principal</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        max-width: 720px;
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 24px;
+        background: rgba(15, 23, 42, 0.92);
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.35);
+      }
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #f8fafc;
+      }
+      p {
+        line-height: 1.8;
+        color: #cbd5e1;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 1.75rem;
+        padding: 0.95rem 1.75rem;
+        border-radius: 9999px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #0f172a;
+        background: #f97316;
+      }
+      .note {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 16px;
+        background: rgba(148, 163, 184, 0.1);
+        color: #cbd5e1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Bem-vindo ao Inox Ferro</h1>
+      <p>
+        Esta é a página principal do seu site em um arquivo <strong>index.html</strong> fora de qualquer pasta.
+        Use-a como a porta de entrada estática do projeto.
+      </p>
+      <p class="note">
+        O frontend principal ainda está em <code>frontend/src/pages/index.tsx</code>, mas a página inicial
+        agora também existe no root do repositório como <code>index.html</code>.
+      </p>
+      <a class="button" href="frontend" target="_blank" rel="noreferrer">
+        Abrir pasta frontend
+      </a>
+    </main>
+  </body>
+</html>
