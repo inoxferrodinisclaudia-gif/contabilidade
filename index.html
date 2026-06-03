@@ -1,71 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inox Ferro - Página Principal</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Inter, system-ui, sans-serif;
-        background: #0f172a;
-        color: #e2e8f0;
-        display: flex;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-      }
-      .container {
-        max-width: 720px;
-        width: 100%;
-        padding: 2rem;
-        border: 1px solid rgba(148, 163, 184, 0.2);
-        border-radius: 24px;
-        background: rgba(15, 23, 42, 0.92);
-        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.35);
-      }
-      h1 {
-        margin: 0 0 1rem;
-        font-size: clamp(2rem, 4vw, 3rem);
-        color: #f8fafc;
-      }
-      p {
-        line-height: 1.8;
-        color: #cbd5e1;
-      }
-      .button {
-        display: inline-block;
-        margin-top: 1.75rem;
-        padding: 0.95rem 1.75rem;
-        border-radius: 9999px;
-        text-decoration: none;
-        font-weight: 700;
-        color: #0f172a;
-        background: #f97316;
-      }
-      .note {
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 16px;
-        background: rgba(148, 163, 184, 0.1);
-        color: #cbd5e1;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="container">
-      <h1>Bem-vindo ao Inox Ferro</h1>
-      <p>
-        Esta é a página principal do seu site em um arquivo <strong>index.html</strong> fora de qualquer pasta.
-        Use-a como a porta de entrada estática do projeto.
-      </p>
-      <p class="note">
-        O frontend principal ainda está em <code>frontend/src/pages/index.tsx</code>, mas a página inicial
-        agora também existe no root do repositório como <code>index.html</code>.
-      </p>
-      <a class="button" href="frontend" target="_blank" rel="noreferrer">
-        Abrir pasta frontend
-      </a>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Inox Ferro</title>
+  <style>
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+    .page { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+    .hero { background: rgba(15,23,42,.95); border: 1px solid rgba(148,163,184,.2); border-radius: 24px; padding: 2rem; }
+    .nav { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .nav a { color: #f8fafc; text-decoration: none; background: rgba(148,163,184,.15); padding: .65rem 1rem; border-radius: 9999px; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 1.5rem; }
+    .card { background: rgba(15,23,42,.95); border: 1px solid rgba(148,163,184,.2); border-radius: 20px; padding: 1.5rem; }
+    h1, h2, p { margin: 0; }
+    p { margin-top: .75rem; line-height: 1.75; color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Login</a>
+      <a href="admin.html">Admin</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="gestao-orcamentos.html">Gestao</a>
+      <a href="orcamentos.html">Orcamentos</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="seguranca.html">Seguranca</a>
+      <a href="tabela-precos.html">Tabela de Precos</a>
+    </div>
+    <section class="hero">
+      <h1>Painel Inox Ferro</h1>
+      <p>Bem-vindo ao dashboard convertido para HTML estatico. Todas as paginas agora existem como HTML no root do projeto.</p>
+      <div class="grid">
+        <div class="card"><h2>Faturamento</h2><p>Visao geral de faturamento e estatisticas em HTML.</p></div>
+        <div class="card"><h2>Orcamentos</h2><p>Gestao e visualizacao de orcamentos, preparada para o site estatico.</p></div>
+        <div class="card"><h2>Clientes</h2><p>Area de clientes com cadastro e historico para futuras paginas.</p></div>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
